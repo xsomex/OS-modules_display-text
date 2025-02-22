@@ -4,8 +4,8 @@ version = "0.0.0"
 edition = "2024"
 
 [dependencies]
-display_text_interface = { path = "./interface/" }
-display_text__processor_graphics = { path = "./processor_graphics/", optional = true }
+display_text_interface = { git = "https://codeberg.org/xsomex/OS-modules_display-text_interface.git" }
+display_text__processor_graphics = { git = "https://codeberg.org/xsomex/OS-modules_display-text_processor-graphics.git", optional = true }
 
 [features]
 processor_graphics = ["dep:display_text__processor_graphics"]
